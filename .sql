@@ -1,0 +1,5 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- Your SQL statements here
+
+SET FOREIGN_KEY_CHECKS = 1;

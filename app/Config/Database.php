@@ -25,32 +25,26 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
-        'database'     => '',
-        'DBDriver'     => 'MySQLi',
-        'DBPrefix'     => '',
-        'pConnect'     => false,
-        'DBDebug'      => true,
-        'charset'      => 'utf8mb4',
-        'DBCollat'     => 'utf8mb4_general_ci',
-        'swapPre'      => '',
-        'encrypt'      => false,
-        'compress'     => false,
-        'strictOn'     => false,
-        'failover'     => [],
-        'port'         => 3306,
-        'numberNative' => false,
-        'foundRows'    => false,
-        'dateFormat'   => [
-            'date'     => 'Y-m-d',
-            'datetime' => 'Y-m-d H:i:s',
-            'time'     => 'H:i:s',
-        ],
-    ];
-
+    'DSN'      => '',
+    'hostname' => 'localhost',       // Usually localhost
+    'username' => 'root', // Your MySQL username
+    'password' => '', // Your MySQL password
+    'database' => 'lms_herrada',     // The database you created in Step 2
+    'DBDriver' => 'MySQLi',
+    'DBPrefix' => '',
+    'pConnect' => FALSE,
+    'DBDebug'  => (ENVIRONMENT !== 'production'),
+    'cacheOn'  => FALSE,
+    'cacheDir' => '',
+    'charset'  => 'utf8',
+    'DBCollat' => 'utf8_general_ci',
+    'swapPre'  => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'strictOn' => FALSE,
+    'failover' => array(),
+    'port'     => 3306,
+];
     //    /**
     //     * Sample database connection for SQLite3.
     //     *
